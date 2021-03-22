@@ -12,9 +12,7 @@ class ProsBase(BaseModel):
 
 # Properties to receive via API on creation
 class ProsCreate(ProsBase):
-    email: EmailStr
-    password: str
-
+    id: int
 
 # Properties to receive via API on update
 class ProsUpdate(ProsBase):

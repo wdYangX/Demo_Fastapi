@@ -5,14 +5,14 @@ from pydantic import BaseModel
 
 # Shared properties
 class CategoriesBase(BaseModel):
-    id: Optional[str] = None
-    cat_name: Optional[str] = None
-    pros_id: Optional[str] = None
+    ID: Optional[str] = None
+    Cat_name: Optional[str] = None
+    Pros_ID: Optional[str] = None
 
 
 # Properties to receive on item creation
 class CategoriesBaseCreate(CategoriesBase):
-    id: str
+    ID: int
 
 
 # Properties to receive on item update
@@ -22,9 +22,9 @@ class CategoriesBaseUpdate(CategoriesBase):
 
 # Properties shared by models stored in DB
 class CategoriesInDBBase(CategoriesBase):
-    id: int
-    cat_name: str
-    pros_id: int
+    ID: int
+    Cat_name: str
+    Pros_ID: int
 
     class Config:
         orm_mode = True
