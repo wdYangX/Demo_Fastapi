@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+*.xml
+.idea/
+*.pyc
+*.pdf
+*.html
+*.xlsx
+/venv/
+*.txt
+output/
+env.prod
