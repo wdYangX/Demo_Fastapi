@@ -13,4 +13,5 @@ class Categories(Base):
     ID = Column(Integer, primary_key=True, index=True)
     Cat_name = Column(String, index=True)
     Pros_ID = Column(Integer, ForeignKey("Pros.ID"))
-    pros = relationship("Pros", back_populates="Categories")
+
+    cat = relationship("Pros", back_populates="pros")
