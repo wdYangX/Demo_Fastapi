@@ -13,4 +13,5 @@ class Pros(Base):
     id = Column(Integer, primary_key=True, index=True)
     Firstname = Column(String, index=True)
     Lastname = Column(String, index=True)
-    # items = relationship("Item", back_populates="owner")
+
+    pros = relationship("Categories", back_populates="cat")
