@@ -12,5 +12,5 @@ if TYPE_CHECKING:
 class Hashtag(Base):
     ID = Column(Integer, primary_key=True, index=True)
     Hashtag_name = Column(String, index=True)
-    Pros_ID = Column(Integer, ForeignKey("Pros.ID"))
+    Pros_ID = Column(Integer, ForeignKey("SubCategories.ID"))
     # SubCat_ID = relationship("Item", back_populates="owner")

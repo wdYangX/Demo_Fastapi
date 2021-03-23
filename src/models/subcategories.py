@@ -11,3 +11,6 @@ if TYPE_CHECKING:
 
 class SubCategories(Base):
     ID = Column(Integer, primary_key=True, index=True)
+    SubCat_name = Column(String, index=True)
+    Cat_ID = Column(String, ForeignKey("Categories.ID"), index=True)
+
