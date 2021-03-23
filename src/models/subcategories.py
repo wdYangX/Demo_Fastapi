@@ -14,3 +14,4 @@ class SubCategories(Base):
     SubCat_name = Column(String, index=True)
     Cat_ID = Column(String, ForeignKey("Categories.ID"), index=True)
 
+    cat = relationship("Categories", back_populates="subcat")
